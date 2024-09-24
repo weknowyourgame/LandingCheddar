@@ -1,0 +1,3 @@
+name = "nextjs-cloudflare-app"
+type = "javascript"
+pages_build_output_dir = "./.next"
