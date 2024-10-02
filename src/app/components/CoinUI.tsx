@@ -91,7 +91,7 @@ export const AnimatedTooltip = ({
                   onClick={() => window.open(item.link, "_blank")}
                   className="w-full bg-gray-800 hover:bg-gray-600 text-white py-2 rounded-md transition-colors text-center"
                 >
-                  SELL WITH CHEDDAR
+                  BUY WITH CHEDDAR
                 </button>
                 <AnimatePresence>
                   {copiedAddress === item.address && (

@@ -7,18 +7,18 @@ import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { CoinToolTip } from "./Headers/Coin";
 import Image from "next/image";
-import Iphone from "@/app/public/IphoneMockup.png";
+import Iphone from "@/app/public/login.png";
 import GridBackground from "./GridPatterns/Grid";
 import GridBackgroundPlus from "./GridPatterns/PlusGrid";
-
+import CheddarGif from "@/app/public/mockup.gif"
 const textLines = [
-  "Lightning Fast Execution",
-  "Real-Time Market Data",
-  "Intuitive User Interface",
-  "Advanced Trading Tools",
-  "Secure Transactions",
-  "24/7 Customer Support",
-  "Unmatched Liquidity",
+  "Build Thriving Meme Coin Communities",
+  "Seamless Meme Coin Trading Experience",
+  "User-Friendly Interface for All Traders",
+  "Empower Developers to Create Engaging Coins",
+  "Instant Transactions with Top Security",
+  "Connect and Collaborate with Fellow Investors",
+  "Real-Time Insights and Analytics",
 ];
 
 const TextCycler = () => {
@@ -65,7 +65,7 @@ function Hero() {
           {...{ ...slap, transition: { ...slap.transition, delay: 0.2 } }}
           className="text-center mx-auto bg-[linear-gradient(180deg,_#FFF5E5_0%,_rgba(255,_245,_204,_0.00)_202.08%)] bg-clip-text text-3xl tracking-tighter sm:text-5xl text-transparent md:text-5xl lg:text-6xl"
         >
-          Blink Trade{" "}
+          Trade MemeCoins{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-yellow-400 to-orange-300">
             & Stack Bags
           </span>{" "}
@@ -76,7 +76,9 @@ function Hero() {
           {...{ ...slap, transition: { ...slap.transition, delay: 0.3 } }}
           className="text-lg text-center text-soft-foreground-text"
         >
-          Cheddar is the ultimate financial messenger that lets users connect and trade all in one place. Sign up now to get started.
+        Community-driven meme coin trading platform
+        <br/>
+        Built for Degens by Degens
         </motion.p>
 
         <div className="p-2">
@@ -95,15 +97,13 @@ function Hero() {
         </Link>
       </section>
 
-      <div className="pt-32">
         <div className="relative flex flex-col md:flex-row items-center justify-center max-w-6xl mx-auto py-32">
-          <GridBackgroundPlus/>
           <div className="md:w-5/12 mb-8 md:mb-0">
             <Image
-              src={Iphone}
-              alt="Cheddar App Mockup"
-              width={400}
-              height={800}
+              src={CheddarGif}
+              alt="Cheddar App Gif"
+              width={300}
+              height={600}
               className="rounded-lg shadow-lg mx-auto"
             />
           </div>
@@ -113,16 +113,12 @@ function Hero() {
               className="text-center md:text-left"
             >
               <h1 className="bg-[linear-gradient(180deg,_#FFF5E5_0%,_rgba(255,_245,_204,_0.00)_202.08%)] bg-clip-text text-3xl tracking-tighter sm:text-4xl text-transparent md:text-5xl lg:text-6xl mb-4">
-                The Future of Trading
+              Fueling the meme coin economy
               </h1>
               <TextCycler />
-              <h2 className="text-transparent font-black bg-clip-text bg-gradient-to-r from-customYellow via-yellow-500 to-orange-600 text-4xl md:text-5xl lg:text-6xl mt-4">
-                Trade Smarter, Not Harder
-              </h2>
             </motion.div>
           </div>
         </div>
-      </div>
     </>
   );
 }

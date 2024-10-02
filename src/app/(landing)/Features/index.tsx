@@ -1,5 +1,5 @@
 /* eslint-disable */
-
+"use client"
 import { CheckIcon, ChevronRight, GithubIcon } from "lucide-react";
 import { Gradient } from "./features";
 import Generating from "./generating";
@@ -7,62 +7,73 @@ import Image from "next/image";
 import { AnimatedBeamShow } from "../CardPatterns/AnimatedBeamWithOutput";
 import service1 from "@/app/public/images/service-1.png";
 import vault from "@/app/public/images/landing_vault.png";
-import integrations from "@/app/public/images/landing_integrations.png";
+import blinks from "@/app/public/blinks.png";
+import { motion } from "framer-motion";
+
+const slap = {
+	initial: { opacity: 0, scale: 1.1 },
+	whileInView: { opacity: 1, scale: 1 },
+	transition: { duration: 0.5, ease: "easeInOut" },
+	viewport: { once: true },
+  };
+
 const Services = () => {
 	return (
+
 		<div id="how-to-use">
-			<div className="container">
-				<div className="mr-auto max-w-5xl">
-					<h1 className="mr-auto text-left font-geistSans tracking-tighter text-4xl md:text-5xl lg:text-6xl text-transparent bg-clip-text bg-[linear-gradient(180deg,_#FFF_0%,_rgba(255,_255,_255,_0.00)_202.08%)]">
-						Sounds super cool? There's more.
-					</h1>
-					<p className="mb-10 ml-auto text-lg tracking-tight text-left font-nomral"></p>
+		<div className="container">
+		  <div className="mr-auto max-w-5xl">
+			<h1 className="mr-auto text-left font-geistSans tracking-tighter text-4xl md:text-5xl lg:text-6xl text-transparent bg-clip-text bg-[linear-gradient(180deg,_#FFF_0%,_rgba(255,_255,_255,_0.00)_202.08%)]">
+			  Sounds super cool? There's more.
+			</h1>
+			<p className="mb-10 ml-auto text-lg tracking-tight text-left font-nomral"></p>
+		  </div>
+  
+		  <div className="relative bg-page-gradient">
+			<div className="flex overflow-hidden relative items-stretch p-8 mb-5 rounded-3xl border lg:p-20 z-1 h-[55rem] md:h-[45rem] border-white/20 xl:h-[46rem]">
+			  <img
+				src="/images/tailwind-bg-gradient.avif"
+				className="absolute top-0 right-0 opacity-100 z-2"
+			  />
+			  <img
+				src="/images/tailwind-bg-gradient.avif"
+				className="absolute top-0 right-0 opacity-100 z-2"
+			  />
+			  <div className="flex w-full">
+				<div className="w-2/5">
+				  <Image
+					className="object-cover transition-all duration-500 ease-linear transform group-hover:rotate-3"
+					width={600}
+					alt="Blinks"
+					height={800}
+					src={blinks}
+				  />
 				</div>
+				<div className="w-3/5 flex items-center justify-end">
+				  <motion.div
+					{...{ ...slap, transition: { ...slap.transition, delay: 0.2 } }}
+					className="text-left">
+					<h1 className="bg-[linear-gradient(180deg,_#FFF5E5_0%,_rgba(255,_245,_204,_0.00)_202.08%)] bg-clip-text text-3xl tracking-tighter sm:text-4xl text-transparent md:text-5xl lg:text-6xl mb-4">
+					  Integrated Blinks
+					</h1>
+				  </motion.div>
+				</div>
+			  </div>
+				<div className="relative ml-auto z-1 max-w-[17rem]">
+					<h4 className="mb-4 text-3xl md:text-4xl">
 
-				<div className="relative bg-page-gradient">
-					<div className="flex overflow-hidden relative items-stretch p-8 mb-5 rounded-3xl border lg:p-20 z-1 h-[55rem] md:h-[45rem] border-white/20 xl:h-[46rem]">
-						<img
-							src="/images/tailwind-bg-gradient.avif"
-							className="absolute top-0 right-0 opacity-100 z-2"
-						/>
-						<img
-							src="/images/tailwind-bg-gradient.avif"
-							className="absolute top-0 right-0 opacity-100 z-2"
-						/>
-						<div className="absolute top-0 left-0 w-full h-full md:w-3/5 xl:w-auto">
-							<Image
-								className="object-cover w-full h-full md:object-right"
-								width={800}
-								alt="Smartest AI"
-								height={730}
-								src={service1}
-							/>
-						</div>
+					</h4>
+				<p className="body-2 mb-[3rem] text-n-3">
 
-						<div className="relative ml-auto z-1 max-w-[17rem]">
-							<h4 className="mb-4 text-3xl md:text-4xl">
-
-							</h4>
-							<p className="body-2 mb-[3rem] text-n-3">
-
-								<br />
-
-							</p>
-						</div>
+					<br />
+					</p>
 					</div>
-
+				</div>
 					<div className="grid relative gap-5 lg:grid-cols-2 z-1">
 						<div className="overflow-hidden flex flex-col md:flex-row md:block relative rounded-3xl border min-h-[34rem] bg-hero-gradient bg-slate-950/10 border-white/10">
 							<div className="md:absolute inset-0">
 								<div className="absolute -z-1 inset-0  h-[600px] w-full bg-transparent opacity-5 bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]"></div>
 
-								<Image
-									src={integrations}
-									className="object-contain w-full h-full"
-									width={630}
-									height={750}
-									alt="robot"
-								/>
 							</div>
 
 							<div className="flex md:absolute md:mt-4 lg:-mt-20 inset-0 flex-col md:justify-end justify-center items-center md:items-start p-8 bg-glass-gradient">

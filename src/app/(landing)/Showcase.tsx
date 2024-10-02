@@ -19,9 +19,8 @@ interface Feature {
 // TODO: This features section will be more for "use-cases"
 const features: Array<Feature> = [
 	{
-		name: "Alpha",
-		summary:
-			"Don’t let another crypto trade slip away seize the alpha opportunity and stack bags.",
+		name: "Market",
+		summary: "Access real-time market data and analytics to enhance your trading strategy.",
 		image: "asking_questions.png",
 		icon: function ReportingIcon() {
 			let id = useId();
@@ -36,8 +35,8 @@ const features: Array<Feature> = [
 							y2="15.5"
 							gradientUnits="userSpaceOnUse"
 						>
-							<stop offset=".194" stopColor="#fff" />
-							<stop offset={1} stopColor="#6692F1" />
+							<stop offset=".194" stopColor="#FEF503" />
+							<stop offset={1} stopColor="#FEF503" />
 						</linearGradient>
 					</defs>
 					<path
@@ -52,8 +51,8 @@ const features: Array<Feature> = [
 		},
 	},
 	{
-		name: "Bookmarks",
-		summary: "Swap tokens, stake, buy NFTs, participate in governance. From anywhere.",
+		name: "Community",
+		summary: "Build and join communities centered around your favorite meme coins.",
 		image: "memory.svg",
 		icon: function InventoryIcon() {
 			return (
@@ -61,24 +60,24 @@ const features: Array<Feature> = [
 					<path
 						opacity=".5"
 						d="M8 17a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z"
-						fill="#fff"
+						fill="#FEF503"
 					/>
 					<path
 						opacity=".3"
 						d="M8 24a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z"
-						fill="#fff"
+						fill="#FEF503"
 					/>
 					<path
 						d="M8 10a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z"
-						fill="#fff"
+						fill="#FEF503"
 					/>
 				</>
 			);
 		},
 	},
 	{
-		name: "Contacts",
-		summary: "Invite your friends to recieve free Airdrops",
+		name: "Rewards",
+		summary: "Earn rewards by holding and engaging with community-driven projects",
 		image: "search.svg",
 		icon: function ContactsIcon() {
 			return (
@@ -86,11 +85,11 @@ const features: Array<Feature> = [
 					<path
 						opacity=".5"
 						d="M25.778 25.778c.39.39 1.027.393 1.384-.028A11.952 11.952 0 0 0 30 18c0-6.627-5.373-12-12-12S6 11.373 6 18c0 2.954 1.067 5.659 2.838 7.75.357.421.993.419 1.384.028.39-.39.386-1.02.036-1.448A9.959 9.959 0 0 1 8 18c0-5.523 4.477-10 10-10s10 4.477 10 10a9.959 9.959 0 0 1-2.258 6.33c-.35.427-.354 1.058.036 1.448Z"
-						fill="#fff"
+						fill="#FEF503"
 					/>
 					<path
 						d="M12 28.395V28a6 6 0 0 1 12 0v.395A11.945 11.945 0 0 1 18 30c-2.186 0-4.235-.584-6-1.605ZM21 16.5c0-1.933-.5-3.5-3-3.5s-3 1.567-3 3.5 1.343 3.5 3 3.5 3-1.567 3-3.5Z"
-						fill="#fff"
+						fill="#FEF503"
 					/>
 				</>
 			);
@@ -229,10 +228,10 @@ export function Showcases() {
 				<div className="-z-1 absolute inset-x-0 -top-0 h-[600px]  w-full bg-transparent bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)]  bg-[size:6rem_4rem] opacity-10 [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]"></div>
 				<div
 					className="h-fukl absolute inset-0  rotate-180 blur-xl"
-					// style={{
-					//   background:
-					//     "linear-gradient(143.6deg, rgba(52, 103, 235, 0) 20.79%, rgba(120,119,198, 0.26) 40.92%, rgba(120,119,198, 0) 70.35%)",
-					// }}
+					style={{
+					  background:
+					    "linear-gradient(143.6deg, rgba(52, 103, 235, 0) 20.79%, rgba(254, 245, 3, 0.12) 40.92%, rgba(120,119,198, 0) 70.35%)",
+					}}
 				></div>
 				{/* <img
           className="absolute inset-x-0 -top-0 opacity-75 "
@@ -244,10 +243,10 @@ export function Showcases() {
           alt="back bg"
         /> */}
 				<div className="mr-auto relative max-w-3xl md:text-start">
-					<h2 className="font-display  text-4xl tracking-tight text-gray-200 sm:text-7xl">
-							Attention so sticky <br />
+					<h2 className="font-display  text-3xl tracking-tight text-gray-200 sm:text-6xl">
+							{/* Attention so sticky */} UI so interactive, you wish <br/>
 							<span className="bg-gradient-to-br from-yellow-400 via-yellow-300 to-orange-600 bg-clip-text text-transparent">
-						its pornographic.
+						{/* its pornographic. */} it was your ex
 						</span>
 					</h2>
 					<div className="overflow-x-hidden overflow-y-hidden">
