@@ -186,7 +186,7 @@ function FeaturesDesktop() {
 							/>
 						))}
 					</TabList>
-					<TabPanels className="relative mt-20 overflow-hidden rounded-3xl bg-page-gradient  px-14 py-16 xl:px-16">
+					<TabPanels className="relative mt-20 overflow-hidden rounded-3xl bg-page-gradient  px-14 xl:px-16">
 						<div className="-mx-5 flex">
 							{features.map((feature, featureIndex) => (
 								<TabPanel
@@ -210,7 +210,7 @@ function FeaturesDesktop() {
 								</TabPanel>
 							))}
 						</div>
-						<div className="absolute inset-0 rounded-4xl ring-1 ring-inset ring-gray-200/10" />
+						{/* <div className="absolute inset-0 rounded-4xl ring-1 ring-inset ring-gray-200/10" /> */}
 					</TabPanels>
 				</>
 			)}

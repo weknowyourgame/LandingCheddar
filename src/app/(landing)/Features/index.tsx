@@ -49,25 +49,21 @@ const Services = () => {
 					src={blinks}
 				  />
 				</div>
-				<div className="w-3/5 flex items-center justify-end">
+				<div className="w-3/5 flex items-center justify-start px-20">
 				  <motion.div
 					{...{ ...slap, transition: { ...slap.transition, delay: 0.2 } }}
-					className="text-left">
-					<h1 className="bg-[linear-gradient(180deg,_#FFF5E5_0%,_rgba(255,_245,_204,_0.00)_202.08%)] bg-clip-text text-3xl tracking-tighter sm:text-4xl text-transparent md:text-5xl lg:text-6xl mb-4">
+					className="flex flex-col">
+					<h1 className="bg-[linear-gradient(180deg,_#FFF5E5_0%,_rgba(255,_245,_204,_0.00)_202.08%)] bg-clip-text text-3xl tracking-tighter sm:text-4xl text-transparent md:text-5xl lg:text-6xl mb-4 items-start">
 					  Integrated Blinks
 					</h1>
+					<p className="body-2 mb-[3rem] text-n-3">
+						Create and interact with Blinks directly in the app
+					
+					</p>
 				  </motion.div>
 				</div>
 			  </div>
-				<div className="relative ml-auto z-1 max-w-[17rem]">
-					<h4 className="mb-4 text-3xl md:text-4xl">
-
-					</h4>
-				<p className="body-2 mb-[3rem] text-n-3">
-
-					<br />
-					</p>
-					</div>
+				
 				</div>
 					<div className="grid relative gap-5 lg:grid-cols-2 z-1">
 						<div className="overflow-hidden flex flex-col md:flex-row md:block relative rounded-3xl border min-h-[34rem] bg-hero-gradient bg-slate-950/10 border-white/10">
@@ -103,12 +99,10 @@ const Services = () => {
 						>
 							<div className="relative py-12 px-4 xl:px-8">
 								<h4 className="text-3xl tracking-tight mb-2 text-left text-transparent bg-clip-text bg-[linear-gradient(180deg,_#FFF_0%,_rgba(255,_255,_255,_0.00)_202.08%)]">
-									Privacy First
+									Secure and reliable transactions
 								</h4>
 								<p className="text-lg text-gray-400 body-2 mb-[2rem]">
-									We use state-of-the art technology and providers to make sure
-									that your data is completely safe and secure, and only store
-									what's absolutely needed.
+								Experience secure, lightning-fast transactions that ensure your meme coin trades are always safe and reliable.
 								</p>
 							</div>
 
@@ -126,7 +120,7 @@ const Services = () => {
 						</div>
 					</div>
 
-					<div
+					{/* <div
 						style={{
 							background:
 								"linear-gradient(143.6deg, rgba(192, 132, 252, 0) 20.79%, rgba(140, 121, 249, 0.2) 40.92%, rgba(140, 121, 249, 0) 80.35%)",
@@ -137,9 +131,9 @@ const Services = () => {
 							src="/images/tailwind-bg-gradient.avif"
 							className="absolute top-0 right-0 opacity-60 z-2"
 						/>
-					</div>
+					</div> */}
 
-					<div className="grid relative gap-5 lg:grid-cols-2 z-1">
+					<div className="grid w-full relative lg:grid-cols-2 z-1 py-5 ">
 						<div className="overflow-hidden relative rounded-3xl border max-h-[20rem] min-h-[40rem] md:min-h-[33rem] bg-hero-gradient bg-slate-950/10 border-white/10">
 							<div className="absolute inset-0">
 								<AnimatedBeamShow />
@@ -153,10 +147,10 @@ const Services = () => {
 							</div>
 						</div>
 
-						<div className="overflow-hidden bg-page-gradient relative py-4 rounded-3xl max-h-[33rem] group  lg:min-h-[30rem]">
+						{/* <div className="overflow-hidden bg-page-gradient relative py-4 rounded-3xl max-h-[33rem] group  lg:min-h-[30rem]">
 							<div className="absolute -z-1 inset-0  h-[600px] w-full bg-transparent opacity-5 bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]"></div>
 							<Gradient opacity={5} />
-						</div>
+						</div> */}
 					</div>
 
 					<Gradient />

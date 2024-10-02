@@ -26,7 +26,7 @@ export default async function Home() {
 	return (
 		<div>
 				<GridBackground />
-			<main className="flex overflow-x-hidden relative flex-col items-center px-2 min-h-screen md:px-0 font-geistSans bg-hero-gradient">
+			<main className="flex overflow-x-hidden  relative flex-col items-center px-2 min-h-screen max-h-full md:px-0 font-geistSans bg-hero-gradient">
 				<div className="absolute top-0 -z-10 min-h-screen w-screen overflow-hidden bg-inherit bg-[radial-gradient(ellipse_20%_80%_at_50%_-20%,rgba(255,255,204,0.3),rgba(255,255,255,0))]"></div>
 				<Navbar />
 				{/* Background gradients */}
