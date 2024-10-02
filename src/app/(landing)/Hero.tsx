@@ -11,6 +11,9 @@ import Iphone from "@/app/public/login.png";
 import GridBackground from "./GridPatterns/Grid";
 import GridBackgroundPlus from "./GridPatterns/PlusGrid";
 import CheddarGif from "@/app/public/mockup.gif"
+import IphoneSvg from "@/app/public/SignInPageIphone.gif"
+
+
 const textLines = [
   "Build Thriving Meme Coin Communities",
   "Seamless Meme Coin Trading Experience",
@@ -60,7 +63,7 @@ const slap = {
 function Hero() {
   return (
     <>
-      <section className="flex relative flex-col gap-5 justify-center items-center mt-24 max-w-xl md:mt-32 md:max-w-2xl lg:max-w-3xl">
+      <section className="flex  flex-col gap-5 justify-center items-center mt-24 max-w-xl md:mt-32 md:max-w-2xl lg:max-w-3xl overlfow-hidden">
         <motion.h1
           {...{ ...slap, transition: { ...slap.transition, delay: 0.2 } }}
           className="text-center mx-auto bg-[linear-gradient(180deg,_#FFF5E5_0%,_rgba(255,_245,_204,_0.00)_202.08%)] bg-clip-text text-3xl tracking-tighter sm:text-5xl text-transparent md:text-5xl lg:text-6xl"
@@ -95,16 +98,18 @@ function Hero() {
             <ArrowUpRight className="absolute transition-all duration-500 -translate-x-4 -translate-y-5 group-hover:translate-x-0 group-hover:translate-y-0" />
           </div>
         </Link>
-      </section>
+        </section>
 
-        <div className="relative flex flex-col md:flex-row items-center justify-center max-w-6xl mx-auto py-32">
-          <div className="md:w-5/12 mb-8 md:mb-0">
+
+        <div className=" flex flex-col md:flex-row items-center justify-center max-w-6xl mx-auto overflow-y-hidden mt-[10vw]">
+          <div className="md:w-5/12 mb-8 md:mb-0 overflow-hidden">
+            
             <Image
-              src={CheddarGif}
+              src={IphoneSvg}
               alt="Cheddar App Gif"
-              width={300}
-              height={600}
-              className="rounded-lg shadow-lg mx-auto"
+              width={500}
+              height={1000}
+              className="rounded-lg shadow-lg mx-auto overflow-y-hidden"
             />
           </div>
           <div className="md:w-7/12 md:pl-8">
@@ -119,6 +124,7 @@ function Hero() {
             </motion.div>
           </div>
         </div>
+   
     </>
   );
 }
